@@ -1,0 +1,11 @@
+# Dépendances et builds (régénérés par npm install / npm run build)
+node_modules/
+dist/
+release/
+coverage/
+
+# Divers
+*.log
+.vite/
+.env*
+.DS_Store

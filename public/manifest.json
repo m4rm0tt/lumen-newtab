@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Lumen",
+  "short_name": "Lumen",
+  "version": "1.0.0",
+  "description": "Remplace le nouvel onglet par l'heure, une recherche et vos sites rangés en groupes, sur le fond de votre choix. Sans compte.",
+  "minimum_chrome_version": "120",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage", "favicon", "search"],
+  "optional_permissions": ["bookmarks", "identity"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; base-uri 'none'; form-action 'none'"
+  }
+}

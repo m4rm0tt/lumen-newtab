@@ -1,0 +1,30 @@
+# Vérifie chaque push sur main et chaque pull request : tests, typecheck, build MV3.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
+      # typecheck + build + vérification du manifeste, des permissions et de la CSP
+      - run: npm run build
+
+      # L'extension compilée, téléchargeable depuis la page du run (pratique pour tester une PR).
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lumen-dist
+          path: dist
+          retention-days: 14

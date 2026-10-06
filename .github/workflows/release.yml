@@ -1,0 +1,49 @@
+# Pousser un tag vX.Y.Z (créé par `npm version`) construit l'extension
+# et publie lumen-X.Y.Z.zip dans une release GitHub.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Le tag correspond-il à package.json ?
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if [ "v$VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Le tag $GITHUB_REF_NAME ne correspond pas à la version $VERSION de package.json."
+            exit 1
+          fi
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run package
+
+      - name: Publier la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" release/lumen-*.zip \
+            --title "Lumen $GITHUB_REF_NAME" \
+            --generate-notes \
+            --notes "$(cat <<'EOF'
+          ### Installer ou mettre à jour
+
+          Téléchargez `lumen-${{ github.ref_name }}.zip` plus bas, dans Assets, et décompressez-le. Ouvrez `chrome://extensions`, activez le mode développeur, puis cliquez sur « Charger l'extension non empaquetée » et choisissez le dossier.
+
+          Pour une mise à jour, décompressez dans le dossier que vous utilisez déjà et cliquez sur la flèche de rechargement de la carte Lumen. Si vous changez de dossier, Chrome voit une nouvelle extension et vos réglages repartent de zéro.
+          EOF
+          )"

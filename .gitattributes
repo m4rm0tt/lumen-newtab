@@ -1,0 +1,7 @@
+# Fins de ligne LF pour tout le monde (macOS, Linux, Windows).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
