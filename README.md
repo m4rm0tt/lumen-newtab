@@ -34,8 +34,6 @@ Forty seconds, with sound: search, groups, drag and drop, a dropped image becomi
 | --- | --- |
 | ![Weather, calendar, to-do and crypto widgets](docs/screenshots/widgets.jpg) | ![The settings drawer open on the background page](docs/screenshots/settings.jpg) |
 
-![Light background with the right-click menu of a shortcut](docs/screenshots/light-menu.jpg)
-
 ## Install
 
 Lumen isn't on the Chrome Web Store yet, so you load it by hand. It takes a minute.
