@@ -6,7 +6,7 @@ Lumen remplace la page Nouvel onglet de Chrome. On y trouve l'heure, une barre d
   <img src="docs/media/lumen-loop.gif" alt="Lumen en action : recherche, changement de groupe et glisser-déposer d'un raccourci" width="760">
 </p>
 
-<p align="center"><a href="docs/media/lumen-promo.mp4">▶ Voir la vidéo de 40 secondes</a> (avec le son)</p>
+Voir la vidéo de 40 secondes en dessous (avec le son)
 
 [English version](README.md)
 
@@ -24,15 +24,13 @@ L'idée vient de GNTD, dont je n'aimais pas l'interface, alors j'ai écrit la mi
 
 ## Vidéo
 
-<a href="docs/media/lumen-promo.mp4"><img src="docs/media/lumen-poster.jpg" alt="Voir la vidéo de Lumen" width="640"></a>
+https://github.com/user-attachments/assets/268cf659-4954-4814-b537-aaffbac67a68
 
 Quarante secondes, avec le son : recherche, groupes, glisser-déposer, une image déposée qui devient le fond, widgets et réglages.
 
 | Widgets | Réglages |
 | --- | --- |
 | ![Widgets météo, calendrier, tâches et crypto](docs/screenshots/widgets.jpg) | ![Le panneau de réglages ouvert sur l'arrière-plan](docs/screenshots/settings.jpg) |
-
-![Fond clair et menu clic droit d'un raccourci](docs/screenshots/light-menu.jpg)
 
 ## Installation
 
