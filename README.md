@@ -6,7 +6,7 @@ Lumen replaces Chrome's new tab page with the time, a search box and your sites 
   <img src="docs/media/lumen-loop.gif" alt="Lumen in action: searching, switching shortcut groups and dragging a shortcut" width="760">
 </p>
 
-<p align="center"><a href="docs/media/lumen-promo.mp4">▶ Watch the 40-second video</a> (with sound, French captions)</p>
+Watch the 40-second video below (with sound, French captions)
 
 [Version française](README.fr.md)
 
@@ -26,7 +26,7 @@ The interface is in French for now.
 
 ## Video
 
-<a href="docs/media/lumen-promo.mp4"><img src="docs/media/lumen-poster.jpg" alt="Watch the Lumen video" width="640"></a>
+https://github.com/user-attachments/assets/268cf659-4954-4814-b537-aaffbac67a68
 
 Forty seconds, with sound: search, groups, drag and drop, a dropped image becoming the background, widgets and settings.
 
