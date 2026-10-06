@@ -2,7 +2,11 @@
 
 Lumen replaces Chrome's new tab page with the time, a search box and your sites sorted into groups, on top of any background you like. Everything runs in the browser. There's no account, no server and no tracking.
 
-![Lumen with the default background](docs/screenshots/home.jpg)
+<p align="center">
+  <img src="docs/media/lumen-loop.gif" alt="Lumen in action: searching, switching shortcut groups and dragging a shortcut" width="760">
+</p>
+
+<p align="center"><a href="docs/media/lumen-promo.mp4">▶ Watch the 40-second video</a> (with sound, French captions)</p>
 
 [Version française](README.fr.md)
 
@@ -19,6 +23,12 @@ GNTD gave me the idea, but I didn't like its interface, so I wrote my own. I wan
 - Everything except the network widgets works offline.
 
 The interface is in French for now.
+
+## Video
+
+<a href="docs/media/lumen-promo.mp4"><img src="docs/media/lumen-poster.jpg" alt="Watch the Lumen video" width="640"></a>
+
+Forty seconds, with sound: search, groups, drag and drop, a dropped image becoming the background, widgets and settings.
 
 | Widgets | Settings |
 | --- | --- |

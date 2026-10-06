@@ -2,7 +2,11 @@
 
 Lumen remplace la page Nouvel onglet de Chrome. On y trouve l'heure, une barre de recherche et vos sites rangés en groupes, sur le fond de votre choix. Tout tourne dans le navigateur : pas de compte, pas de serveur, pas de pistage.
 
-![Lumen avec le fond par défaut](docs/screenshots/home.jpg)
+<p align="center">
+  <img src="docs/media/lumen-loop.gif" alt="Lumen en action : recherche, changement de groupe et glisser-déposer d'un raccourci" width="760">
+</p>
+
+<p align="center"><a href="docs/media/lumen-promo.mp4">▶ Voir la vidéo de 40 secondes</a> (avec le son)</p>
 
 [English version](README.md)
 
@@ -17,6 +21,12 @@ L'idée vient de GNTD, dont je n'aimais pas l'interface, alors j'ai écrit la mi
 - Réglages, groupes et widgets se synchronisent entre vos ordinateurs via Chrome Sync. Les images, les notes et les tâches restent sur l'ordinateur où vous les avez créées.
 - Douze widgets facultatifs : météo, calendrier, tâches, notes, minuteur et Pomodoro, horloges du monde, RSS, crypto, bourse, GitHub, Spotify et un widget personnalisé. Aucun ne se charge tant que vous ne l'avez pas ajouté.
 - Tout fonctionne hors ligne, sauf les widgets qui vont chercher des données sur Internet.
+
+## Vidéo
+
+<a href="docs/media/lumen-promo.mp4"><img src="docs/media/lumen-poster.jpg" alt="Voir la vidéo de Lumen" width="640"></a>
+
+Quarante secondes, avec le son : recherche, groupes, glisser-déposer, une image déposée qui devient le fond, widgets et réglages.
 
 | Widgets | Réglages |
 | --- | --- |
